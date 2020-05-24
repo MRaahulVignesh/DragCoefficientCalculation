@@ -65,7 +65,7 @@ Therefore, the actuatal motion equation becomes into,
 
  Ft - (Fd+Frr) = Ma
  
-#### Procedure:
+### Procedure:
 1. Drive to a flat road with little traffic or wind.
 
 2. Have the passenger ready with a stopwatch and paper to record data.
@@ -85,7 +85,7 @@ Therefore, the actuatal motion equation becomes into,
 ** _For directly interacting with the code, follow the below link_
 https://colab.research.google.com/drive/1m7HbeyILhITISCZrKSfL-EKgYk_Nu7Hz?usp=sharing#scrollTo=Xxs7giRrHStv_ **
 
-### References
+## References
 
 - https://www.instructables.com/id/Measure-the-drag-coefficient-of-your-car/
 - https://www.engineeringtoolbox.com/drag-coefficient-d_627.html  
