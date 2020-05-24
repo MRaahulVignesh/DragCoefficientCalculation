@@ -1,11 +1,12 @@
 # DragCoefficientCalculationDrag Coefficient
 
-##Definition 
+## Definition 
 In fluid dynamics, the drag coefficient (commonly denoted as: Cd, Cx or Cw) is a dimensionless quantity that is used to quantify the drag or resistance of an object in a fluid environment, such as air or water. It is used in the drag equation in which a lower drag coefficient indicates the object will have less aerodynamic or hydrodynamic drag. The drag coefficient is always associated with a particular surface area.
+
 The drag coefficient of any object comprises the effects of the two basic contributors to fluid dynamic drag: skin friction and form drag. The drag coefficient of a lifting airfoil or hydrofoil also includes the effects of lift-induced drag. The drag coefficient of a complete structure such as an aircraft also includes the effects of interference drag.
 
 
-##Drag Equation
+## Drag Equation
 In fluid dynamics, the drag equation is a formula used to calculate the force of drag experienced by an object due to movement through a fully enclosing fluid. The formula is accurate only under certain conditions: the objects must have a blunt form factor and the system must have a large enough Reynolds number to produce turbulence behind the object. 
 
 The equation is  Fd = 12  u2 Cd A  --------------------> 1
@@ -18,12 +19,12 @@ u is the flow velocity relative to the object,
 A is the reference area, and
 Cd is the drag coefficient.
 
-##Calculation Method
+## Calculation Method
 
-###1 : Using Gradient Descent Method
+### 1 : Using Gradient Descent Method
 
 
-####Formula Used:
+#### Formula Used:
    Fd = -Cd*A*0.5*rho*V^2
    Frr = -Crr*M*g 
    F = Fd + Frr 
@@ -48,14 +49,16 @@ Where,
    Cd is the vehicle's drag coefficient we want to determine
  
 We arrive at this formula assuming the following conditions:
-During the calculation of V, the vehicle will be coasting in neutral. 
-Therefore, the propulsive force is taken as zero (Ft = 0)
-The angle of inclination of the road is 0ofrom the horizontal. (assumed)
+
+1. Since, during the calculation of V, the vehicle will be coasting in neutral. Therefore, the propulsive force is taken as zero (Ft = 0).
+
+2. The angle of inclination of the road is 0ofrom the horizontal. (assumed)
  
-Therefore, the actuation motion equation becomes into,
+Therefore, the actuatal motion equation becomes into,
+
+ Ft - (Fd+Frr) = Ma
  
- 
-####Procedure:
+#### Procedure:
 1. Drive to a flat road with little traffic or wind.
 2. Have the passenger ready with a stopwatch and paper to record data.
 3. Have the driver accelerate up to above 70 km/h or so, and shift into neutral.
@@ -65,10 +68,10 @@ Therefore, the actuation motion equation becomes into,
 7. Enter these values in a spreadsheet and feed it to the code given below. The algorithm averages data from all 6 trials to create a single data set representing velocity (V actual) as a function of time. It then generates it's own model for velocity (V model) based on entered constants and initial guesses for Cd and Crr. Gradient descent function is used to adjust Cd and Crr in order to minimize the error between the model and actual data. Once the error is minimized and the model data matches the actual data as best it can, then Cd is correct.
 8. The estimated result will closely represent the original value of Cd and Cr.
 
-For directly interacting with the code, follow the below link
-https://colab.research.google.com/drive/1m7HbeyILhITISCZrKSfL-EKgYk_Nu7Hz?usp=sharing#scrollTo=Xxs7giRrHStv
+** _For directly interacting with the code, follow the below link_
+https://colab.research.google.com/drive/1m7HbeyILhITISCZrKSfL-EKgYk_Nu7Hz?usp=sharing#scrollTo=Xxs7giRrHStv_ **
 
-###References
+### References
 https://www.researchgate.net/publication/321482419_Determination_of_drag_coefficient_for_TOYOTA_car_model_Using_Strain_Gauge_Method
 https://www.instructables.com/id/Measure-the-drag-coefficient-of-your-car/
 https://www.engineeringtoolbox.com/drag-coefficient-d_627.html  
