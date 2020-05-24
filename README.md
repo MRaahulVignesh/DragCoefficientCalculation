@@ -3,7 +3,6 @@
 ## Definition 
 In fluid dynamics, the drag coefficient (commonly denoted as: Cd, Cx or Cw) is a dimensionless quantity that is used to quantify the drag or resistance of an object in a fluid environment, such as air or water. It is used in the drag equation in which a lower drag coefficient indicates the object will have less aerodynamic or hydrodynamic drag. The drag coefficient is always associated with a particular surface area.
 
-The drag coefficient of any object comprises the effects of the two basic contributors to fluid dynamic drag: skin friction and form drag. The drag coefficient of a lifting airfoil or hydrofoil also includes the effects of lift-induced drag. The drag coefficient of a complete structure such as an aircraft also includes the effects of interference drag.
 
 
 ![](Images/Image3.png)
@@ -59,12 +58,10 @@ We arrive at this formula assuming the following conditions:
 
 1. Since, during the calculation of V, the vehicle will be coasting in neutral. Therefore, the propulsive force is taken as zero (Ft = 0).
 
-2. The angle of inclination of the road is 0ofrom the horizontal. (assumed)
+2. The angle of inclination of the road is 0 degree from the horizontal. (assumed)
  
-Therefore, the actuatal motion equation becomes into,
+Therefore, the actuatal motion equation becomes into the above specificed equation.
 
- Ft - (Fd+Frr) = Ma
- 
 ### Procedure:
 1. Drive to a flat road with little traffic or wind.
 
