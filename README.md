@@ -5,7 +5,9 @@ In fluid dynamics, the drag coefficient (commonly denoted as: Cd, Cx or Cw) is a
 
 The drag coefficient of any object comprises the effects of the two basic contributors to fluid dynamic drag: skin friction and form drag. The drag coefficient of a lifting airfoil or hydrofoil also includes the effects of lift-induced drag. The drag coefficient of a complete structure such as an aircraft also includes the effects of interference drag.
 
-![]()
+
+![](Images/Image3.png)
+
 
 
 ## Drag Equation
@@ -13,7 +15,7 @@ In fluid dynamics, the drag equation is a formula used to calculate the force of
 
 The equation is 
 
-![]()
+![](Images/Image2.png)
 
 Where,
 Fd is the drag force, which is by definition the force component in the direction of the flow velocity, 
@@ -36,7 +38,7 @@ Cd is the drag coefficient.
 Using the equations 1,2,3,4, the acceleration due to air and wind resistance as a function of velocity is calculated
 
 
-![]()
+![](Images/Image1.png)
 
 
 Where, 
